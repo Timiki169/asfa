@@ -118,21 +118,21 @@ namespace PiggyVarietyMod
 
             teslaSoundVolume = (float)base.Config.Bind<float>("Generic", "TeslaGateVolume", 1, "(Default 1) Sets the sound volume for Tesla Gate.").Value;
             teslaShake = (bool)base.Config.Bind<bool>("Generic", "TeslaGateShake", false, "(Experimental, Default false) Shake the screen when near Tesla Gate.").Value;
-            revolverMaxPlayerDamage = (int)base.Config.Bind<int>("Generic", "RevolverMaxPlayerDamage", 70, "(Default 70) Sets the maximum amount of damage the revolver can inflict on the player.").Value;
-            revolverMaxMonsterDamage = (int)base.Config.Bind<int>("Generic", "RevolverMaxMonsterDamage", 4, "(Default 4) Sets the maximum amount of damage the revolver can inflict on the monster.").Value;
-            customGunInfinityAmmo = (bool)base.Config.Bind<bool>("Generic", "CustomGunInfinityAmmo", false, "(Default false) If true, reloading custom guns will no longer require ammo.").Value;
+            revolverMaxPlayerDamage = (int)base.Config.Bind<int>("Generic", "RevolverMaxPlayerDamage", 1, "(Default 70) Sets the maximum amount of damage the revolver can inflict on the player.").Value;
+            revolverMaxMonsterDamage = (int)base.Config.Bind<int>("Generic", "RevolverMaxMonsterDamage", 10, "(Default 4) Sets the maximum amount of damage the revolver can inflict on the monster.").Value;
+            customGunInfinityAmmo = (bool)base.Config.Bind<bool>("Generic", "CustomGunInfinityAmmo", true, "(Default false) If true, reloading custom guns will no longer require ammo.").Value;
             teslaSpawnWeight = (float)base.Config.Bind<float>("Spawn", "TeslaGateWeight", 1, "(Default 1) Sets the spawn weight for the Tesla Gate.").Value;
 
-            revolverRarity = (int)base.Config.Bind<int>("Scrap", "RevolverRarity", 20, "(Default 20) Sets the spawn rarity for the Revolver.").Value;
-            revolverAmmoRarity = (int)base.Config.Bind<int>("Scrap", "RevolverAmmoRarity", 60, "(Default 60) Sets the spawn rarity for the Revolver ammo.").Value;
+            revolverRarity = (int)base.Config.Bind<int>("Scrap", "RevolverRarity", 50, "(Default 20) Sets the spawn rarity for the Revolver.").Value;
+            revolverAmmoRarity = (int)base.Config.Bind<int>("Scrap", "RevolverAmmoRarity", 75, "(Default 60) Sets the spawn rarity for the Revolver ammo.").Value;
             //gummyLightRarity = (int)base.Config.Bind<int>("Scrap", "GummylightAmmoRarity", 0, "(Default 0) Sets the spawn rarity for the Gummy flashlight.").Value;
 
-            revolverPrice = (int)base.Config.Bind<int>("Store", "RevolverPrice", -1, "(Recommended -1 or 550) Set the price of the Revolver. If -1, removes the item from the store list.").Value;
+            revolverPrice = (int)base.Config.Bind<int>("Store", "RevolverPrice", 100, "(Recommended -1 or 550) Set the price of the Revolver. If -1, removes the item from the store list.").Value;
             revolverAmmoPrice = (int)base.Config.Bind<int>("Store", "RevolverAmmoPrice", -1, "(Recommended -1 or 30) Set the price of the Revolver ammo. If -1, removes the item from the store list.").Value;
             //gummyLightPrice = (int)base.Config.Bind<int>("Store", "GummylightAmmoPrice", 30, "(Recommended 30) Set the price of the Gummy flashlight. If -1, removes the item from the store list.").Value;
-            riflePrice = (int)base.Config.Bind<int>("Store", "RiflePrice", -1, "(Recommended -1 or 1,000~) Set the price of the Rifle (M4A1). If -1, removes the item from the store list.").Value;
-            rifleMagPrice = (int)base.Config.Bind<int>("Store", "RifleMagPrice", -1, "(Recommended -1 or 400~) Set the price of the Rifle magazine. If -1, removes the item from the store list.").Value;
-            rifleRarity = (int)base.Config.Bind<int>("Scrap", "RifleRarity", 20, "(Default 20) Sets the spawn rarity for the Rifle.").Value;
+            riflePrice = (int)base.Config.Bind<int>("Store", "RiflePrice", 100, "(Recommended -1 or 1,000~) Set the price of the Rifle (M4A1). If -1, removes the item from the store list.").Value;
+            rifleMagPrice = (int)base.Config.Bind<int>("Store", "RifleMagPrice", 1, "(Recommended -1 or 400~) Set the price of the Rifle magazine. If -1, removes the item from the store list.").Value;
+            rifleRarity = (int)base.Config.Bind<int>("Scrap", "RifleRarity", 50, "(Default 20) Sets the spawn rarity for the Rifle.").Value;
             rifleMagRarity = (int)base.Config.Bind<int>("Scrap", "RifleMagRarity", 60, "(Default 60) Sets the spawn rarity for the Rifle magazine.").Value;
 
             translateKorean = (bool)base.Config.Bind<bool>("Translation", "Enable Korean", false, "Set language to Korean.").Value;
